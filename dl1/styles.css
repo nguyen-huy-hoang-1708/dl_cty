@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*as * để dùng đc tất cả các biến trong file variable.scss*/
+/*as * để dùng đc tất cả các biến trong file mixin.scss*/
+html, body {
+  max-width: 1920px;
+  min-height: 975px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media (max-width: 1199px) {
+  html, body {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  html, body {
+    height: auto;
+  }
+}
+
+body {
+  background-image: url("Frame.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* tuỳ chọn: ảnh đứng yên khi cuộn */
+}
+
+.container {
+  width: 100%;
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  max-width: 385px;
+  max-height: 28px;
+  margin-top: 61px;
+  margin-left: 160.21px;
+}
+@media (max-width: 1199px) {
+  header {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+}
+
+.logo {
+  width: 61.9733314514px;
+  height: 56px;
+  top: 46px;
+  left: 90px;
+}
+
+.company-name {
+  font-family: Lexend;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #607D8B;
+  margin-left: 5px;
+  white-space: nowrap; /* Không xuống dòng */
+}
+
+.login-box {
+  max-width: 480px;
+  max-height: 408px;
+  margin-left: 720px;
+  margin-top: 195px;
+  margin-right: 720px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column; /* Các phần tử sẽ xếp theo chiều dọc */
+}
+.login-box h2 {
+  text-align: left;
+  max-width: 225px;
+  max-height: 44px;
+  font-family: Lexend;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #546E7A;
+}
+@media (max-width: 1199px) {
+  .login-box h2 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .login-box h2 {
+    width: 100%;
+  }
+}
+.login-box h3 {
+  max-width: 127px;
+  max-height: 28px;
+  font-family: Lexend;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #546E7A;
+}
+@media (max-width: 1199px) {
+  .login-box h3 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .login-box h3 {
+    width: 100%;
+  }
+}
+@media (max-width: 1920px) {
+  .login-box {
+    margin-left: 35vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: none;
+  }
+}
+@media (max-width: 1199px) {
+  .login-box {
+    margin-left: 35vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: none;
+  }
+}
+@media (max-width: 767px) {
+  .login-box {
+    margin-left: 35vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: none;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  max-height: 324px;
+  gap: 32px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  max-width: 432px;
+  max-height: 20px;
+  font-family: lexend;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #78909C;
+  box-sizing: border-box;
+  border-color: #78909C;
+}
+@media (max-width: 767px) {
+  input[type=text], input[type=password] {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  max-width: 178px;
+  max-height: 24px;
+  border-radius: 6px;
+  gap: 15px;
+  margin-left: -5px;
+  color: #78909C;
+}
+
+.remember input {
+  min-width: 24px;
+  min-height: 24px;
+  top: 220px;
+  border-radius: 6px;
+  border-width: 1.5px;
+}
+
+button[type=submit] {
+  max-width: 89px;
+  max-height: 20px;
+  top: 290px;
+  left: 196px;
+  font-family: Lexend;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+
+button {
+  min-width: 480px;
+  min-height: 48px;
+  gap: 32px;
+  background-color: #4294F6;
+  border-radius: 6px;
+  border: none;
+}
+
+.footer-note {
+  width: 100%;
+  display: flex;
+  max-height: 15px;
+  margin-top: 250px;
+  margin-left: 677px;
+  align-items: center;
+}
+@media (max-width: 1920px) {
+  .footer-note {
+    margin-left: 35vw;
+    margin-top: 30vh;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-note {
+    margin-left: 28vw;
+    margin-top: 30vh;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .footer-note {
+    margin-left: 28vw;
+    margin-top: 30vh;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.input-wrapper1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 480px;
+  max-height: 48px;
+  gap: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+  gap: 8px;
+}
+.input-wrapper1 input {
+  flex: 1;
+  max-width: 480px;
+  max-height: 48px;
+  font-family: Lexend;
+  font-size: 16px;
+  color: #78909C;
+  gap: 8px;
+  border-radius: 8px;
+  border-width: 1.5px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+}
+.input-wrapper1 .icon-login {
+  position: absolute;
+  max-width: 14px;
+  max-height: 16px;
+  padding-left: 15px;
+}
+
+.input-wrapper2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 480px;
+  max-height: 48px;
+  gap: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+  gap: 8px;
+}
+.input-wrapper2 input {
+  flex: 1;
+  min-width: 480px;
+  max-height: 48px;
+  font-family: Lexend;
+  font-size: 16px;
+  color: #78909C;
+  gap: 8px;
+  border-radius: 8px;
+  border-width: 1.5px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+}
+.input-wrapper2 .icon-password {
+  position: absolute;
+  max-width: 14px;
+  max-height: 16px;
+  padding-left: 15px;
+}
+
+.footer-container {
+  font-family: Lexend;
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #546E7A;
+}
+
+/*# sourceMappingURL=styles.css.map */
